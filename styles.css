@@ -1,0 +1,629 @@
+/* 
+###############
+
+    FONT IMPORTS STARTING HERE
+
+###############
+*/
+/* 
+###
+
+        Roboto font imported as 'plain-font' 
+
+### 
+*/
+
+@font-face {
+    font-family: 'plain-font';
+    src: url('./fonts/plain_font/Roboto-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'plain-font-bold';
+    src: url('./fonts/plain_font/Roboto-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'plain-font-italic';
+    src: url('./fonts/plain_font/Roboto-Regular.ttf') format('truetype');
+}
+
+/* 
+### 
+
+        ChakraPetch font imported as 'cyber-font' 
+    
+### 
+*/
+
+@font-face {
+    font-family: 'cyber-font';
+    src: url('./fonts/cyber_font/ChakraPetch-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'cyber-font-medium';
+    src: url('./fonts/cyber_font/ChakraPetch-Medium.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'cyber-font-bold';
+    src: url('./fonts/cyber_font/ChakraPetch-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'cyber-font-italic';
+    src: url('./fonts/cyber_font/ChakraPetch-Italic.ttf') format('truetype');
+}
+
+/* 
+### 
+
+        DancingScript font imported as 'antique-font' 
+
+### 
+*/
+
+@font-face {
+    font-family: 'antique-font';
+    src: url('./fonts/antique_font/static/DancingScript-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'antique-font-medium';
+    src: url('./fonts/antique_font/static/DancingScript-Medium.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'antique-font-bold';
+    src: url('./fonts/antique_font/static/DancingScript-Bold.ttf') format('truetype');
+}
+
+
+/* 
+### 
+
+        Lobster font imported as 'retro-font' 
+
+### 
+*/
+
+@font-face {
+    font-family: 'retro-font';
+    src: url('./fonts/retro_font/Lobster-Regular.ttf') format('truetype');
+}
+
+/* 
+### 
+
+        PlayfairDisplay font imported as 'professional-font' 
+
+### 
+*/
+
+@font-face {
+    font-family: 'professional-font';
+    src: url('./fonts/professional_font/static/PlayfairDisplay-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'professional-font-medium';
+    src: url('./fonts/professional_font/static/PlayfairDisplay-Medium.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'professional-font-bold';
+    src: url('./fonts/professional_font/static/PlayfairDisplay-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'professional-font-italic';
+    src: url('./fonts/professional_font/static/PlayfairDisplay-Italic.ttf') format('truetype');
+}
+
+
+/* 
+############ 
+
+        WEBPAGE STYLES STARTING HERE 
+
+############ 
+*/
+
+
+html{
+    margin: 0%;
+    padding: 0%;
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+body {
+    font-family: plain-font;
+    margin: 0%;
+    padding: 0%;
+}
+
+/* 
+### 
+
+        NAVIGATION BAR LINK (ANCHOR) TAG STYLING 
+    
+### 
+*/
+
+.plain-link{
+    color: black;
+    text-decoration: none;
+}
+
+.plain-link:hover{
+    color: black;
+    text-decoration: underline;
+}
+
+.plain-link:visited{
+    color: black;
+}
+
+.cyber-link{
+    color: rgb(50, 156, 1);
+}
+
+.cyber-link:hover{
+    color: rgb(50, 156, 1);
+    text-decoration: line-through;
+}
+
+.cyber-link:visited{
+    color: rgb(50, 156, 1);
+}
+
+.antique-link{
+    color: rgb(255, 244, 227);
+    font-size: 120%;
+    text-decoration: none;
+
+    padding: 10%;
+}
+
+.antique-link:hover{
+    color: rgb(61, 37, 0);
+    border:double rgb(61, 37, 0);
+}
+
+.antique-link:visited{
+    color: rgb(253, 236, 211);
+}
+
+.retro-link{
+    color: rgb(7, 125, 146);
+    text-decoration: none;
+    padding: 10%;
+}
+
+.retro-link:hover{
+    color:rgb(230, 22, 22);
+    text-decoration: overline;
+}
+
+.retro-link:visited{
+    color: rgb(7, 125, 146);
+}
+
+.professional-link{
+    color: rgb(99, 99, 99);
+    text-decoration: none;
+}
+
+.professional-link:hover{
+    color: rgb(0, 0, 0);
+    text-decoration: underline;
+}
+
+.professional-link:visited{
+    color: rgb(100, 100, 100);
+}
+/* 
+### 
+
+        NAVIGATION MENU STYLING 
+    
+### 
+*/
+
+.nav-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+    padding: 1%;
+}
+
+/* 
+
+    SEARCH BOX STYLING
+
+*/
+
+.search-box-plain{
+    padding: 1%;
+    border: 2px solid rgb(0, 0, 0);
+    color: rgb(0, 0, 0);
+}
+
+input.search-box-plain::placeholder{
+    color: rgb(0, 0, 0);
+}
+
+.search-box-plain{
+    padding: 1%;
+    border: 1px solid rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+}
+
+.search-box-cyber{
+    padding: 1%;
+    border: 1px solid rgb(50, 156, 1);
+    background-color: rgb(0, 0, 0);
+}
+
+input.search-box-cyber::placeholder{
+    color: rgb(50, 156, 1);
+}
+
+.search-box-antique{
+    padding: 1%;
+    border: double rgb(253, 236, 211);
+    background-color: rgb(107, 81, 42)
+}
+
+input.search-box-antique::placeholder{
+    color: rgb(253, 236, 211);
+}
+
+.search-box-retro{
+    padding: 1%;
+    border: 2px dashed rgb(29, 121, 138);
+    background-color: rgb(49, 163, 184);
+}
+
+input.search-box-retro::placeholder{
+    color: rgb(255, 220, 232);
+}
+
+.search-box-professional{
+    padding: 1%;
+    background-color: rgb(186, 199, 226);
+    border: 1px solid rgb(117, 117, 117);
+}
+
+input.search-box-professional::placeholder{
+    color: rgb(117, 117, 117);
+}
+
+/*
+
+    HR TAG STYLING
+
+*/
+
+.hr-plain{
+    height: 0.1vh;
+    background-color: rgb(104, 104, 104);
+    margin: 0px;
+    border: none;
+}
+
+.hr-cyber{
+    height: 0.1vh;
+    background-color: rgb(50, 156, 1);
+    margin: 0px;
+    border: none;
+}
+
+.hr-antique{
+    background-color: rgb(107, 81, 42);
+    height: 0.1vh;
+    margin: 0px;
+    border: none;
+}
+
+.hr-retro{
+    background-color: rgb(49, 163, 184);
+    height: 0.1vh;
+    margin: 0px;
+    border: none;
+}
+
+.hr-professional{
+    background-color: rgb(104, 104, 104);
+    height: 0.1vh;
+    margin: 0px;
+    border: none;
+}
+
+
+/* 
+### 
+
+        MAIN PAGE CONTENT STYLING
+
+### 
+*/
+
+/* Main content container */
+.content-container{
+    display: grid;
+    grid-template-columns: 25% 50% 25%;
+    grid-template-rows: 100%;
+    justify-content: center;
+}
+
+.main-panel{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/*
+
+    THEME BUTTTONS - SIDE PANEL STYLING
+
+*/
+
+.left-side-panel{
+    display: grid;
+    padding: 0% 10%;
+}
+
+.theme-button{
+    margin: 10%;
+}
+
+.active{
+    box-shadow: 1px 1px 8px 2px #a1fcd6;
+}
+
+.plain{
+    font-size: 100%;
+
+    transition: 0.8s ease-in-out;
+}
+
+.plain:hover{
+    background-color: rgb(163, 163, 163);
+    color: rgb(255, 255, 255);
+    border: 1px solid rgb(0, 0, 0);
+    font-size: 100%;
+
+    cursor: grab;
+    transition: 0.4s ease-in-out;
+}
+
+.cyber{
+    color: rgb(50, 156, 1);
+    background-color: rgb(0, 0, 0);
+    border: 3px solid rgb(50, 156, 1);
+
+    font-size: 100%;
+
+    transition: 0.4s ease-in-out;
+}
+
+.cyber:hover{
+    color:rgb(0, 0, 0);
+    background-color: rgb(50, 156, 1);
+    border: 3px solid rgb(0, 0, 0);
+
+    cursor: grab;
+    transition: 0.4s ease-in-out;
+}
+
+.antique{
+    color:rgb(253, 236, 211);
+    background-color: rgb(61, 37, 0);
+    border: double rgb(253, 236, 211);
+
+    font-size: 120%;
+
+    transition: 0.4s ease-in-out;
+}
+
+.antique:hover{
+    color:rgb(119, 71, 0);
+    background-color: rgb(253, 236, 211);
+    border: ridge rgb(119, 71, 0);
+
+    cursor: grab;
+    transition: 0.4s ease-in-out;
+}
+
+.retro{
+    color:rgb(7, 125, 146);
+    background-color: rgb(253, 133, 173);
+    border: 2px solid rgb(7, 125, 146);
+
+    font-size: 150%;
+
+    transition: 0.4s ease-in-out;
+}
+
+.retro:hover{
+    color:rgb(250, 41, 41);
+    background-color: rgb(49, 163, 184);
+    border: 2px dashed rgb(247, 44, 44);
+
+    cursor: grab;
+    transition: 0.4s ease-in-out;
+}
+
+.professional{
+    color:rgb(77, 77, 77);
+    background-color: rgb(186, 199, 226);
+    border: 2px solid rgb(129, 129, 129);
+
+    font-size: 100%;
+
+    transition: 0.4s ease-in-out;
+}
+
+.professional:hover{
+    color:rgb(65, 65, 65);
+    background-color: rgb(202, 216, 245);
+    border: 2px solid rgb(100, 100, 100);
+
+    cursor: grab;
+    transition: 0.4s ease-in-out;
+}
+
+/*
+
+    CENTRE CONTENT STYLING
+
+*/
+
+.content-plain {
+    background-color: rgb(255, 255, 255);
+}
+
+.content-cyber {
+    background-color: rgb(0, 0, 0);
+}
+
+.content-antique {
+    background-color: rgb(235, 217, 194);
+}
+
+.content-retro {
+    background-color: rgb(252, 231, 238);
+}
+
+.content-professional {
+    background-color: rgb(247, 249, 253);
+}
+
+/* 
+
+    Right side panel 
+
+*/
+.right-side-panel{ 
+    display: flex;
+    flex-direction: column;
+    padding: 5.5% 25%;
+}
+
+.social-button{
+    margin: 10%;
+}
+
+.social-button:hover{
+    cursor: grab;
+}
+
+.plain-svg{
+    width: 10vw;
+    fill: rgb(56, 56, 56);
+
+    transition: 0.4s ease-in-out;
+}
+
+.plain-svg:hover{
+    fill: rgb(32, 32, 32);
+
+    transition: 0.4s ease-in-out;
+}
+
+.cyber-svg{
+    width: 10vw;
+    fill: rgb(26, 83, 0);
+
+    transition: 0.4s ease-in-out;
+}
+
+.cyber-svg:hover{
+    fill: rgb(50, 156, 1);
+
+    transition: 0.4s ease-in-out;
+}
+
+.antique-svg{
+    width: 10vw;
+    fill: rgb(100, 63, 7);
+
+    transition: 0.4s ease-in-out;
+}
+
+.antique-svg:hover{
+    fill: rgb(129, 84, 16);
+
+    transition: 0.4s ease-in-out;
+}
+
+.retro-svg{
+    width: 10vw;
+    fill: rgb(49, 163, 184);
+
+    transition: 0.4s ease-in-out;
+}
+
+.retro-svg:hover{
+    fill: rgb(245, 72, 72);
+
+    transition: 0.4s ease-in-out;
+}
+
+.professional-svg{
+    width: 5vw;
+    fill: rgb(122, 122, 122);
+
+    transition: 0.4s ease-in-out;
+}
+
+.professional-svg:hover{
+    fill: rgb(129, 129, 129);
+
+    transition: 0.4s ease-in-out;
+}
+
+/*
+### 
+
+        FOOTER CONTENT STYLING 
+    
+### 
+*/
+.footer-container{
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+}
+
+.footer-plain {
+    background-color: rgb(230, 230, 230);
+    color: rgb(20, 20, 20);
+}
+
+.footer-cyber {
+    background-color: rgb(43, 136, 0);
+    color: rgb(0, 0, 0);
+}
+
+.footer-antique {
+    background-color: rgb(107, 81, 42);
+    color: rgb(238, 238, 238);
+    border-top: 1px solid rgb(0, 0, 0);
+}
+
+.footer-retro {
+    background-color: rgb(253, 133, 173);
+    color: rgb(7, 125, 146);
+    font-size: 120%;
+}
+
+.footer-professional {
+    background-color: rgb(186, 199, 226);
+    color: rgb(51, 51, 51);
+    font-weight: bold;
+}
